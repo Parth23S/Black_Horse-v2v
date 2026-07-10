@@ -72,12 +72,61 @@
                     <textarea id="past-work" name="past-work" rows="4" placeholder="Share your previous roles, projects, and strengths"></textarea>
                 </div>
                 <div class="form-group">
-                    <label for="resume-details">Resume Summary</label>
-                    <textarea id="resume-details" name="resume-details" rows="4" placeholder="Paste key resume details or your CV summary"></textarea>
+                     <label for="resume-upload">Upload Resume</label>
+                     <input type="file" id="resume-upload" accept=".pdf,.doc,.docx">
+                    <small>Supported: PDF, DOC, DOCX</small>
                 </div>
                 <div class="form-group">
-                    <label for="learning-focus">What You Want to Learn</label>
-                    <textarea id="learning-focus" name="learning-focus" rows="3" placeholder="Describe the skills or knowledge you want to gain"></textarea>
+                    <label for="career-break">Career Break Duration</label>
+                    <select id="career-break">
+                        <option>Select Duration</option>
+                        <option>Less than 6 Months</option>
+                        <option>6 Months - 1 Year</option>
+                        <option>1 - 2 Years</option>
+                     <option>2 - 5 Years</option>
+                    <option>More than 5 Years</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                     <label for="break-reason">Reason for Career Break</label>
+                    <select id="break-reason">
+                        <option>Select Reason</option>
+                        <option>Motherhood</option>
+                        <option>Caregiving</option>
+                        <option>Marriage</option>
+                        <option>Health</option>
+                        <option>Education</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                     <label for="industry">Target Industry</label>
+                    <select id="industry" name="industry">
+                        <option value="">Select Industry</option>
+                        <option>Technology</option>
+                        <option>Education</option>
+                        <option>Healthcare</option>
+                        <option>Finance</option>
+                        <option>Marketing</option>
+                        <option>Human Resources</option>
+                        <option>Law</option>
+                        <option>Media & Entertainment</option>
+                        <option>Retail</option>
+                        <option>Government</option>
+                        <option>Entrepreneurship</option>
+                        <option>Other</option>
+                     </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="desired-role">Desired Role</label>
+                    <input
+                        type="text"
+                        id="desired-role"
+                        name="desired-role"
+                        placeholder="e.g. HR Manager, Teacher, Software Engineer, Financial Analyst"
+                     >
                 </div>
                 <button class="primary-btn" type="submit">Submit for AI Analysis</button>
             </form>
