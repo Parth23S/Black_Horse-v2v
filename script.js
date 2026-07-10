@@ -2,6 +2,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     console.log("Career Comeback AI Loaded 🚀");
 
+    // Handle redirect buttons
+    const redirectButtons = document.querySelectorAll('[data-redirect]');
+    redirectButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const redirectUrl = this.getAttribute('data-redirect');
+            if(redirectUrl) {
+                window.location.href = redirectUrl;
+            }
+        });
+    });
 
     const links = document.querySelectorAll('a[href^="#"]');
 
