@@ -39,19 +39,20 @@ Built during a hackathon, this project focuses on seamless user experience, resp
 
 Follow these steps to run the project on your own machine. 
 
-### 1. Clone the Repository
+### STEPS
 ```bash
+# 1. Clone the repository
 git clone (https://github.com/Parth23S/Black_Horse-v2v)
 cd Black_horse-v2v
 
-### 2. Set up the backend
+# 2. Set up the backend
 # Install the required Python libraries
 pip install -r requirements.txt
 
 # Start the FastAPI server
 uvicorn main:app --reload
 
-### 3. Set up the frontend
+# 3. Set up the frontend
 Because the frontend is built with pure vanilla web technologies, there is no need for Node.js or npm run start.
 
 Simply locate the comeback.html file in your project folder.
