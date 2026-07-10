@@ -1,7 +1,4 @@
-/* ==========================================
-   CAREER COMEBACK AI
-   STYLE.CSS PART 1
-==========================================*/
+
 
 *{
     margin:0;
@@ -19,9 +16,6 @@ body{
 
 }
 
-/*======================
-BACKGROUND
-=======================*/
 
 body::before{
 
@@ -66,9 +60,6 @@ body::after{
 
 }
 
-/*======================
-NAVBAR
-=======================*/
 
 nav{
 
@@ -181,9 +172,6 @@ nav{
 
 }
 
-/*======================
-HERO SECTION
-=======================*/
 
 .hero{
 
@@ -240,9 +228,6 @@ HERO SECTION
 
 }
 
-/*======================
-BUTTONS
-=======================*/
 
 .primary-btn{
 
@@ -304,9 +289,6 @@ BUTTONS
 
 }
 
-/*======================
-HERO IMAGE
-=======================*/
 
 .hero-right{
 
@@ -325,10 +307,6 @@ HERO IMAGE
     animation:float 5s ease-in-out infinite;
 
 }
-
-/*======================
-FLOAT ANIMATION
-=======================*/
 
 @keyframes float{
 
@@ -352,9 +330,6 @@ FLOAT ANIMATION
 
 }
 
-/*======================
-COMMON SECTION TITLE
-=======================*/
 
 section h2{
 
@@ -374,9 +349,6 @@ section{
 
 }
 
-/*======================
-SCROLLBAR
-=======================*/
 
 ::-webkit-scrollbar{
 
@@ -403,9 +375,6 @@ SCROLLBAR
     background:#5F31E4;
 
 }
-/*=========================================
-        STATS SECTION
-=========================================*/
 
 .stats{
 
@@ -466,11 +435,6 @@ SCROLLBAR
 
 }
 
-
-
-/*=========================================
-        FEATURES SECTION
-=========================================*/
 
 .features{
 
@@ -546,7 +510,6 @@ SCROLLBAR
     margin-bottom:15px;
 
 }
-
 .feature-card p{
 
     color:#666;
@@ -555,11 +518,38 @@ SCROLLBAR
 
 }
 
+form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
 
+.form-group{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
 
-/*=========================================
-        DASHBOARD
-=========================================*/
+label{
+    font-weight:600;
+    color:#333;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:16px 18px;
+    border-radius:18px;
+    border:1px solid rgba(124,77,255,.2);
+    background:rgba(255,255,255,.95);
+    font-size:1rem;
+    color:#333;
+    resize:vertical;
+}
+
+button[type="submit"]{
+    align-self:flex-start;
+}
 
 .dashboard{
 
@@ -605,11 +595,6 @@ SCROLLBAR
 
 }
 
-
-
-/*=========================================
-        PROGRESS CARD
-=========================================*/
 
 .progress{
 
@@ -695,12 +680,6 @@ SCROLLBAR
 
 }
 
-
-
-/*=========================================
-        DASHBOARD RIGHT
-=========================================*/
-
 .dashboard-right{
 
     background:rgba(255,255,255,.75);
@@ -761,12 +740,6 @@ SCROLLBAR
 
 }
 
-
-
-/*=========================================
-        CTA SECTION
-=========================================*/
-
 .cta{
 
     width:90%;
@@ -823,12 +796,6 @@ SCROLLBAR
 
 }
 
-
-
-/*=========================================
-      CARD HOVER GLOW
-=========================================*/
-
 .feature-card::before,
 .stat-card::before{
 
@@ -872,12 +839,6 @@ SCROLLBAR
 
 }
 
-
-
-/*=========================================
-      FADE IN ANIMATION
-=========================================*/
-
 @keyframes fadeUp{
 
     from{
@@ -907,9 +868,6 @@ SCROLLBAR
     animation:fadeUp .8s ease;
 
 }
-/*=========================================
-        HOW IT WORKS SECTION
-=========================================*/
 
 .steps{
 
@@ -1000,10 +958,6 @@ SCROLLBAR
 
 }
 
-
-/*=========================================
-        FOOTER
-=========================================*/
 
 footer{
 
@@ -1106,10 +1060,6 @@ footer a:hover{
 }
 
 
-/*=========================================
-        IMAGE EFFECT
-=========================================*/
-
 .hero-right img:hover{
 
     transform:scale(1.03);
@@ -1118,10 +1068,6 @@ footer a:hover{
 
 }
 
-
-/*=========================================
-        BUTTON RIPPLE EFFECT
-=========================================*/
 
 .primary-btn,
 .secondary-btn,
@@ -1170,10 +1116,6 @@ footer a:hover{
 }
 
 
-/*=========================================
-        SECTION SPACING
-=========================================*/
-
 .stats,
 .features,
 .dashboard,
@@ -1184,11 +1126,6 @@ footer a:hover{
 
 }
 
-
-/*=========================================
-        TEXT SELECTION
-=========================================*/
-
 ::selection{
 
     background:#7C4DFF;
@@ -1196,11 +1133,6 @@ footer a:hover{
     color:white;
 
 }
-
-
-/*=========================================
-        RESPONSIVE
-=========================================*/
 
 @media(max-width:1100px){
 
@@ -1402,11 +1334,6 @@ padding:50px 30px;
 
 }
 
-
-/*=========================================
-        SMOOTH HOVER EFFECTS
-=========================================*/
-
 .feature-card,
 .stat-card,
 .step,
@@ -1465,6 +1392,3 @@ transform:translate(-50%,-50%) scale(15);
 }
 
 }
-/*=========================================
-        END OF CSS
-=========================================*/

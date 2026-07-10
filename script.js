@@ -1,15 +1,7 @@
-/*=========================================
-    CAREER COMEBACK AI
-    script.js
-=========================================*/
-
 document.addEventListener("DOMContentLoaded", () => {
 
     console.log("Career Comeback AI Loaded 🚀");
 
-    /*========================
-      Smooth Scroll
-    ========================*/
 
     const links = document.querySelectorAll('a[href^="#"]');
 
@@ -35,9 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
-    /*========================
-      Navbar Shadow
-    ========================*/
 
     const nav = document.querySelector("nav");
 
@@ -57,9 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
-    /*========================
-      Counter Animation
-    ========================*/
 
     const counters=document.querySelectorAll(".stat-card h2");
 
@@ -103,9 +89,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
-    /*========================
-      Fade On Scroll
-    ========================*/
 
     const observer=new IntersectionObserver(entries=>{
 
@@ -145,9 +128,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
-    /*========================
-      Button Ripple
-    ========================*/
 
     const buttons=document.querySelectorAll("button");
 
@@ -173,13 +153,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
             },600);
 
+            const redirect=this.dataset.redirect;
+            if(redirect){
+                setTimeout(()=>{
+                    window.location.href=redirect;
+                },150);
+            }
+
         });
 
     });
 
-    /*========================
-      Hero Image Hover
-    ========================*/
 
     const hero=document.querySelector(".hero-right img");
 
@@ -198,10 +182,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
     }
-
-    /*========================
-      Back To Top Button
-    ========================*/
 
     const topBtn=document.createElement("button");
 
@@ -266,10 +246,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
     });
-
-    /*========================
-      Welcome Message
-    ========================*/
 
     setTimeout(()=>{
 
